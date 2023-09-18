@@ -1,3 +1,3 @@
-module github.com/neurosnap/sentences
+module github.com/aresa7796/sentences
 
 go 1.18

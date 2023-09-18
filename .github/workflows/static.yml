@@ -23,7 +23,7 @@ jobs:
             --out ./public \
             --label pgit \
             --desc "a command line sentence tokenizer" \
-            --clone-url "https://github.com/neurosnap/sentences.git" \
+            --clone-url "https://github.com/aresa7796/sentences.git" \
             --home-url "https://git.erock.io" \
             --revs main
       - name: Set outputs

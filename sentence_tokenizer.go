@@ -141,3 +141,31 @@ func (s *DefaultSentenceTokenizer) Tokenize(text string) []*Sentence {
 
 	return sentences
 }
+
+func (s *DefaultSentenceTokenizer) Tokenize2String(text string) []string {
+	annotatedTokens := s.AnnotatedTokens(text)
+
+	lastBreak := 0
+	//sentences := make([]*Sentence, 0, len(annotatedTokens))
+	sentences := make([]string, 0, len(annotatedTokens))
+	for _, token := range annotatedTokens {
+		if !token.SentBreak {
+			continue
+		}
+
+		//sentence := &Sentence{lastBreak, token.Position, text[lastBreak:token.Position]}
+		sentence := text[lastBreak:token.Position]
+		sentences = append(sentences, sentence)
+
+		lastBreak = token.Position
+	}
+
+	if lastBreak != len(text) {
+		lastChar := len(text)
+		//sentence := &Sentence{lastBreak, lastChar, text[lastBreak:lastChar]}
+		sentence := text[lastBreak:lastChar]
+		sentences = append(sentences, sentence)
+	}
+
+	return sentences
+}

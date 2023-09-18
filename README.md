@@ -1,14 +1,14 @@
-[![release](https://github.com/neurosnap/sentences/actions/workflows/release.yml/badge.svg)](https://github.com/neurosnap/sentences/actions/workflows/release.yml)
-[![GODOC](https://godoc.org/github.com/nathany/looper?status.svg)](https://godoc.org/github.com/neurosnap/sentences)
+[![release](https://github.com/aresa7796/sentences/actions/workflows/release.yml/badge.svg)](https://github.com/aresa7796/sentences/actions/workflows/release.yml)
+[![GODOC](https://godoc.org/github.com/nathany/looper?status.svg)](https://godoc.org/github.com/aresa7796/sentences)
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/neurosnap/sentences)](https://goreportcard.com/report/github.com/neurosnap/sentences)
+[![Go Report Card](https://goreportcard.com/badge/github.com/aresa7796/sentences)](https://goreportcard.com/report/github.com/aresa7796/sentences)
 
 # Sentences - A command line sentence tokenizer
 
 This command line utility will convert a blob of text into a list of sentences.
 
 * [Demo](https://sentences-231000.appspot.com/)
-* [Docs](https://godoc.org/github.com/neurosnap/sentences)
+* [Docs](https://godoc.org/github.com/aresa7796/sentences)
 
 ## Features
 
@@ -27,20 +27,20 @@ This command line utility will convert a blob of text into a list of sentences.
 ### mac
 
 ```
-brew tap neurosnap/sentences
+brew tap aresa7796/sentences
 brew install sentences
 ```
 
 ### other
 
 Or you can find the pre-built binaries on [the github
-releases page](https://github.com/neurosnap/sentences/releases).
+releases page](https://github.com/aresa7796/sentences/releases).
 
 ### using golang
 
 ```
-go get github.com/neurosnap/sentences
-go install github.com/neurosnap/sentences/cmd/sentences
+go get github.com/aresa7796/sentences
+go install github.com/aresa7796/sentences/cmd/sentences
 ```
 
 ## Command
@@ -50,7 +50,7 @@ go install github.com/neurosnap/sentences/cmd/sentences
 ## Get it
 
 ```
-go get github.com/neurosnap/sentences
+go get github.com/aresa7796/sentences
 ```
 
 ## Use it
@@ -60,7 +60,7 @@ import (
     "fmt"
     "os"
 
-    "github.com/neurosnap/sentences"
+    "github.com/aresa7796/sentences"
 )
 
 func main() {
@@ -94,7 +94,7 @@ This package attempts to fix some problems I noticed for english.
 import (
     "fmt"
 
-    "github.com/neurosnap/sentences/english"
+    "github.com/aresa7796/sentences/english"
 )
 
 func main() {
@@ -115,7 +115,7 @@ func main() {
 ## Contributing
 
 I need help maintaining this library.  If you are interested in contributing
-to this library then please start by looking at the [golden-rules](https://github.com/neurosnap/sentences/tree/golden-rule) branch which
+to this library then please start by looking at the [golden-rules](https://github.com/aresa7796/sentences/tree/golden-rule) branch which
 tests the [Golden Rules](https://github.com/diasks2/pragmatic_segmenter/blob/master/README.md#the-golden-rules)
 for english sentence tokenization created by the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter)
 library.
@@ -130,7 +130,7 @@ I'm happy to help anyone willing to contribute.
 can be extended.
 
 Eager to make ad-hoc changes but don't know how to start?
-Have a look at `github.com/neurosnap/sentences/english` for a solid example.
+Have a look at `github.com/aresa7796/sentences/english` for a solid example.
 
 ## Notice
 
